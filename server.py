@@ -5,7 +5,7 @@ import proto_pb2
 import proto_pb2_grpc
 
 class GreeterServicer(): #процедура которую мы будем вызывать
-    def SayHello(self, request):
+    def SayHello(self, request, context):
         return proto_pb2.HelloResponse(message=f"Hello, {request.name}!")
     
 def server():
@@ -22,4 +22,4 @@ def server():
         server.stop(0)
         
 if __name__ == "__main__":
-    server( )
+    server()

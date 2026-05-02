@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bproto.proto\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\" \n\rHelloResponse\x12\x0f\n\x07message\x18\x01 \x01(\t24\n\x07Greeter\x12)\n\x08SayHello\x12\r.HelloRequest\x1a\x0e.HelloResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x0bproto.proto\"\x1c\n\x0cHelloRequest\x12\x0c\n\x04name\x18\x01 \x01(\t\" \n\rHelloResponse\x12\x0f\n\x07message\x18\x01 \x01(\t\"!\n\x0fSquaringRequest\x12\x0e\n\x06number\x18\x01 \x01(\x05\"+\n\x10SquaringResponse\x12\x17\n\x0fsquaring_number\x18\x01 \x01(\x05\x32\x34\n\x07Greeter\x12)\n\x08SayHello\x12\r.HelloRequest\x1a\x0e.HelloResponse2w\n\x08Squaring\x12\x35\n\x0eSquaringNumber\x12\x10.SquaringRequest\x1a\x11.SquaringResponse\x12\x34\n\rCubeOfNumbers\x12\x10.SquaringRequest\x1a\x11.SquaringResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -35,6 +35,12 @@ if not _descriptor._USE_C_DESCRIPTORS:
   _globals['_HELLOREQUEST']._serialized_end=43
   _globals['_HELLORESPONSE']._serialized_start=45
   _globals['_HELLORESPONSE']._serialized_end=77
-  _globals['_GREETER']._serialized_start=79
-  _globals['_GREETER']._serialized_end=131
+  _globals['_SQUARINGREQUEST']._serialized_start=79
+  _globals['_SQUARINGREQUEST']._serialized_end=112
+  _globals['_SQUARINGRESPONSE']._serialized_start=114
+  _globals['_SQUARINGRESPONSE']._serialized_end=157
+  _globals['_GREETER']._serialized_start=159
+  _globals['_GREETER']._serialized_end=211
+  _globals['_SQUARING']._serialized_start=213
+  _globals['_SQUARING']._serialized_end=332
 # @@protoc_insertion_point(module_scope)
